@@ -1,0 +1,164 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.our-story {
+    width: 100%;
+    margin-bottom: 6%;
+    position: relative;
+
+    .animal-img {
+        position: absolute;
+        bottom: -5%;
+        left: 5%;
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+
+    .divider {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 6%;
+
+        .divider-icon {
+            max-width: 151px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .items {
+        .item {
+            display: flex;
+
+            p.time,
+            h3.title {
+                font-size: 14px;
+                text-transform: uppercase;
+                position: relative;
+                top: -1%;
+                font-weight: 300;
+            }
+
+            h3.title {
+                padding-bottom: 2%;
+            }
+
+            img.overlay {
+                position: absolute;
+                max-width: 152px;
+                width: 100%;
+                height: auto;
+                top: 0;
+                left: 0;
+            }
+
+
+            .column {
+                position: relative;
+                flex: 1;
+                padding: 0 7% 8% 5%;
+                text-align: left;
+                // margin-top: -20px;
+
+                .description {
+                    display: block;
+                    width: 100%;
+                    aspect-ratio: 10 / 5;
+                }
+            }
+
+            .column:first-child {
+                text-align: right;
+                border-right: solid 2px $primary-color;
+            }
+
+            .column:first-child:after {
+                content: "";
+                display: inline-block;
+                max-width: 15px;
+                width: 100%;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background-color: $primary-color;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translateX(55%);
+            }
+
+            &:nth-child(even) {
+
+                flex-direction: row-reverse;
+
+                img.overlay {
+                    top: 0;
+                    left: unset;
+                    right: 0;
+                }
+
+
+                .column:first-child:after {
+                    transform: translateX(-57%);
+                    left: 0;
+                }
+
+                .column:first-child {
+                    border-right: unset;
+
+                    .time {
+                        text-align: left;
+                    }
+                }
+
+                .column:last-child {
+                    text-align: right;
+                    border-right: solid 2px $primary-color;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .divider {
+            .divider-icon {
+                max-width: calc((151 / 500) * 100vw);
+            }
+        }
+
+        .animal-img {
+            max-width: calc((200 / 500) * 100vw);
+        }
+
+        .items {
+            .item {
+
+                p.time,
+                h3.title {
+                    font-size: calc((14 / 500) * 100vw);
+                }
+
+                img.overlay {
+                    max-width: calc((152 / 500) * 100vw);
+                }
+
+                .column:first-child {
+                    border-right: solid calc((2 / 500) * 100vw) $primary-color;
+                }
+
+                .column:first-child:after {
+                    max-width: calc((15 / 500) * 100vw);
+                }
+
+                &:nth-child(even) {
+
+                    .column:last-child {
+                        text-align: right;
+                        border-right: solid calc((2 / 500) * 100vw) $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
