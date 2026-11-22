@@ -44,6 +44,14 @@
         margin-bottom: 10%;
     }
 
+    .party-options[hidden] {
+        display: none;
+    }
+
+    .party-options {
+        margin-top: -7%;
+    }
+
     .label-confirm {
         font-size: 12px;
         text-transform: uppercase;

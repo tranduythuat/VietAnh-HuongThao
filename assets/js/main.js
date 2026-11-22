@@ -562,7 +562,8 @@
     const formData = new FormData(form);
     const data = {
       ...Object.fromEntries(formData.entries()),
-      dietary: formData.getAll("dietary")
+      dietary: formData.getAll("dietary"),
+      party: formData.getAll("party").join(", "),
     }
 
 
@@ -575,7 +576,8 @@
     const {
       name,
       confirm,
-      guest_number,
+      guest_number = '',
+      party,
       wish,
     } = data;
 
@@ -607,6 +609,19 @@
 
     const t = messages[lang] || messages.vi;
 
+    if (confirm === "Sẽ tham dự" && !formData.getAll("party").length) {
+      Swal.fire({
+        title: lang === "en" ? "Choose a party" : "Vui lòng chọn tiệc",
+        text: lang === "en"
+          ? "Select at least one party: groom's family or bride's family."
+          : "Vui lòng chọn ít nhất Tiệc nhà trai hoặc Tiệc nhà gái.",
+        icon: "warning",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#806331ff",
+      });
+      return;
+    }
+
     // =========================
     // Loading popup
     // =========================
@@ -636,6 +651,7 @@
         body: new URLSearchParams({
           name,
           confirm,
+          party,
           guest_number,
           wish,
         }),
@@ -684,6 +700,23 @@
   function initRSVP() {
     const form = document.forms["rsvpForm"];
     if (form) {
+      const partyOptions = form.querySelector(".party-options");
+      const attendanceChoices = form.querySelectorAll('input[name="confirm"]');
+
+      const updatePartyOptions = () => {
+        const isAttending = form.querySelector('input[name="confirm"]:checked')?.value === "Sẽ tham dự";
+        partyOptions.hidden = !isAttending;
+
+        if (!isAttending) {
+          partyOptions.querySelectorAll('input[name="party"]').forEach((checkbox) => {
+            checkbox.checked = false;
+          });
+        }
+      };
+
+      attendanceChoices.forEach((choice) => choice.addEventListener("change", updatePartyOptions));
+      form.addEventListener("reset", () => window.setTimeout(updatePartyOptions));
+      updatePartyOptions();
       form.addEventListener("submit", (e) => handleFormSubmit(e, "vi"));
     }
   }

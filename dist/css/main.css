@@ -1271,6 +1271,12 @@ section {
   gap: 5%;
   margin-bottom: 10%;
 }
+.rsvp .party-options[hidden] {
+  display: none;
+}
+.rsvp .party-options {
+  margin-top: -7%;
+}
 .rsvp .label-confirm {
   font-size: 12px;
   text-transform: uppercase;
