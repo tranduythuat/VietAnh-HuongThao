@@ -25,7 +25,7 @@
             background: linear-gradient(to bottom,
                     rgba(0, 0, 0, 0.17),
                     rgba(0, 0, 0, 0.3)),
-                url('../../assets/images/couple/end_bg.jpg') no-repeat center/cover;
+                url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/couple/end_bg.jpg') no-repeat center/cover;
             filter: blur(4px);
             z-index: 0;
             transform: scale(1.1);
@@ -83,9 +83,10 @@
         }
 
         p.thanks {
-            padding: 0 8%;
+            padding: 0 13%;
             text-align: justify;
             text-align-last: center;
+            font-size: 13px;
         }
 
         p.credits {
@@ -122,6 +123,10 @@
                     }
                 }
 
+            }
+
+            p.credits {
+                font-size: calc((13 / 500) * 100vw);
             }
 
             p.credits {
