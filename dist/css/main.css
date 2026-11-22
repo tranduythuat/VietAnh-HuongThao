@@ -4,49 +4,42 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "UVNBUCTHU";
   src: url("../../assets/fonts/UVNBUCTHU.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "UVNKeChuyen3";
   src: url("../../assets/fonts/UVNKeChuyen3.woff2") format("woff2"), url("../../assets/fonts/UVNKeChuyen3.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "scarlet-bradley";
   src: url("../../assets/fonts/1FTV VIP scarlet-bradley.regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Faugllin-Balseyn";
   src: url("../../assets/fonts/1FTV-VIP-Faugllin-Balseyn.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "VN-Chillatos";
   src: url("../../assets/fonts/VN-Chillatos-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Lobster-Regular";
   src: url("../../assets/fonts/Lobster-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +74,6 @@ body {
   cursor: pointer;
   z-index: 9999;
 }
-
 .music-box .label {
   display: flex;
   justify-content: center;
@@ -95,7 +87,6 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
 .music-box .label .musicLabel {
   width: 100%;
   text-align: left;
@@ -108,7 +99,6 @@ body {
   border: 1px solid rgba(48, 44, 42, 0.124);
   opacity: 0.9;
 }
-
 .music-box .player {
   max-width: 55px;
   width: 105%;
@@ -128,24 +118,19 @@ body {
   .container {
     font-size: 2.4vw;
   }
-
   .music-box {
     bottom: 2vw;
   }
-
   .music-box .label {
     max-width: 60vw;
   }
-
   .music-box .label .musicLabel {
     font-size: 2.4vw;
   }
-
   .music-box .player {
     max-width: 11vw;
   }
 }
-
 .spin {
   animation: spin 4s linear infinite;
 }
@@ -154,12 +139,10 @@ body {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 header {
   display: flex;
   justify-content: center;
@@ -179,7 +162,6 @@ section {
   align-items: center;
   margin: 100px 0;
 }
-
 .image-wrapper img {
   width: 320px;
   border-radius: 16px;
@@ -195,8 +177,7 @@ section {
   transition: none;
 }
 
-[data-animate=flip],
-[data-animate=flip-yoyo] {
+[data-animate=flip], [data-animate=flip-yoyo] {
   transform-origin: left center;
   transform: rotateY(-120deg) scale(0.9);
   opacity: 0;
@@ -205,8 +186,7 @@ section {
   transition: none;
 }
 
-[data-animate=flip].active,
-[data-animate=flip-yoyo].active {
+[data-animate=flip].active, [data-animate=flip-yoyo].active {
   opacity: 1;
   transform: rotateY(0deg);
 }
@@ -227,11 +207,9 @@ section {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-
 .btn--primary {
   color: white;
 }
-
 .card-container {
   margin: 0;
   height: 100vh;
@@ -253,32 +231,27 @@ section {
   margin: 0 10px;
   perspective: 1000px;
 }
-
 .card .couple-names {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 2.8rem;
   font-weight: 300;
   padding-bottom: 30px;
 }
-
 .card a {
   text-decoration: none;
   color: #806331;
 }
-
 .card .letter-img {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
 }
-
 .card .letter-img img {
   width: 90%;
   height: auto;
   object-fit: cover;
 }
-
 .card .letter-img .logo {
   position: absolute;
   max-width: 82px;
@@ -286,12 +259,10 @@ section {
   height: auto;
   top: 15%;
 }
-
 .card .letter-img .overlay {
   position: absolute;
   bottom: 7%;
 }
-
 .card .date {
   font-size: 23px;
 }
@@ -319,45 +290,33 @@ section {
  * ----------------------------------------
  */
 @-webkit-keyframes shake-bottom {
-
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
   }
-
   10% {
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-
-  20%,
-  40%,
-  60% {
+  20%, 40%, 60% {
     -webkit-transform: rotate(-4deg);
     transform: rotate(-4deg);
   }
-
-  30%,
-  50%,
-  70% {
+  30%, 50%, 70% {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-
   80% {
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
   }
-
   90% {
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
 }
-
 .cover .content {
   background-color: #806331;
   width: 100%;
@@ -371,7 +330,6 @@ section {
   z-index: 1;
   position: relative;
 }
-
 .cover .content::before {
   content: "";
   position: absolute;
@@ -381,14 +339,12 @@ section {
   z-index: 0;
   transform: scale(1.1);
 }
-
 .cover .content .names {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 44px;
   letter-spacing: 1.4px;
   font-weight: 300;
 }
-
 .cover .content .photo-frame {
   max-width: 250px;
   width: 100%;
@@ -396,49 +352,40 @@ section {
   perspective: 1000px;
   margin: 5% 0;
 }
-
 .cover .content .photo-frame img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .cover .content .subtext {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 24px;
   letter-spacing: 1.2px;
 }
-
 .cover .content .divider {
   margin: 1% 0;
   perspective: 100px;
 }
-
 .cover .content .divider .divider-icon {
   max-width: 80px;
   width: 100%;
   height: auto;
 }
-
 .cover .content .divider img.bottom {
   transform: rotateX(180deg);
 }
-
 @media (max-width: 500px) {
   .cover .content .names {
     font-size: 8.8vw;
     letter-spacing: 0.28vw;
   }
-
   .cover .content .photo-frame {
     max-width: 50vw;
   }
-
   .cover .content .subtext {
     font-size: 4.8vw;
     letter-spacing: 0.24vw;
   }
-
   .cover .content .divider .divider-icon {
     max-width: 16vw;
   }
@@ -447,7 +394,6 @@ section {
 .intro {
   width: 100%;
 }
-
 .intro .content {
   background: url("../../assets/images/bg/bg1.png") no-repeat 50% 100%/95%;
   width: 100%;
@@ -459,7 +405,6 @@ section {
   justify-content: flex-start;
   flex-direction: column;
 }
-
 .intro .content .invitation {
   width: 100%;
   display: flex;
@@ -468,40 +413,32 @@ section {
   text-align: center;
   align-items: center;
 }
-
 .intro .content .invitation .logo {
   padding: 20% 0 7%;
   perspective: 500px;
 }
-
 .intro .content .invitation .logo img {
   max-width: 164px;
   width: 100%;
   height: auto;
 }
-
 .intro .content .invitation .family-info {
   padding-bottom: 4%;
 }
-
 .intro .content .invitation .family-info p {
   line-height: 1.8;
   text-transform: uppercase;
 }
-
 .intro .content .invitation .family-info img {
   width: 16px;
   height: auto;
 }
-
 .intro .content .invitation .announcement p {
   line-height: 1.8;
 }
-
 .intro .content .invitation .couple-names {
   padding: 4% 0;
 }
-
 .intro .content .invitation .couple-names h2 {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 45px;
@@ -509,25 +446,21 @@ section {
   margin: 4% 0;
   font-weight: 300;
 }
-
 .intro .content .invitation .couple-names .separator-text {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 32px;
   line-height: 1;
 }
-
 .intro .content .invitation .divider {
   width: 100%;
   padding: 6% 0 10%;
   perspective: 1000px;
 }
-
 .intro .content .invitation .divider .divider-icon {
   width: 60px;
   height: auto;
   object-fit: cover;
 }
-
 .intro .content .location-time {
   width: 100%;
   text-align: center;
@@ -536,34 +469,27 @@ section {
   align-items: center;
   flex-direction: column;
 }
-
 .intro .content .location-time .top-detail h2 {
   font-size: 32px;
   font-weight: 300;
 }
-
 .intro .content .location-time .top-detail .lunar-date {
   font-size: 14px;
 }
-
 .intro .content .location-time .top-detail .location-label {
   margin: 15% 0 5%;
 }
-
 .intro .content .location-time .top-detail .location-name {
   font-size: 40px;
   font-family: "UVNBUCTHU", sans-serif;
 }
-
 .intro .content .location-time .top-detail .location-address {
   font-size: 14px;
 }
-
 .intro .content .location-time .top-detail .map-link {
   width: 100%;
   padding: 4% 0;
 }
-
 .intro .content .location-time .top-detail .map-link a.map-button {
   color: #806331;
   text-decoration: none;
@@ -572,12 +498,10 @@ section {
   border: solid 1px #806331;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .intro .content .location-time .top-detail .map-link a.map-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 3px 5px rgba(154, 128, 94, 0.4);
 }
-
 .intro .content .location-time .photo-area {
   margin-top: 15%;
   max-width: 228px;
@@ -585,50 +509,40 @@ section {
   aspect-ratio: 1/1.3;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/couple/couple_intro.png") no-repeat center/100%;
 }
-
 .intro .content .location-time .invitation-text {
   padding: 14% 0 10%;
 }
-
 .intro .content .location-time .invitation-text p {
   line-height: 1.8;
   text-transform: uppercase;
 }
-
 .intro .content .location-time .time {
   width: 100%;
 }
-
 .intro .content .location-time .time h2 {
   font-size: 28px;
   margin: 1%;
   font-weight: 300;
 }
-
 .intro .content .location-time .time h2 span {
   font-size: 26px;
 }
-
 .intro .content .location-time .time .lunar-date {
   text-transform: uppercase;
 }
-
 .intro .content .location-time .venue-details .divider {
   width: 100%;
   padding: 22% 0 19%;
   perspective: 1000px;
 }
-
 .intro .content .location-time .venue-details .divider .divider-icon {
   width: 70px;
   height: auto;
   object-fit: cover;
 }
-
 .intro .content .location-time .venue-details p.announcement {
   padding-bottom: 4%;
 }
-
 .intro .content .location-time .venue-details .location-name {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 52px;
@@ -637,16 +551,13 @@ section {
   margin-bottom: 2%;
   font-weight: 300;
 }
-
 .intro .content .location-time .venue-details .address-info {
   font-size: 14px;
 }
-
 .intro .content .location-time .venue-details .map-link {
   width: 100%;
   padding: 4% 0;
 }
-
 .intro .content .location-time .venue-details .map-link a.map-button {
   color: #806331;
   text-decoration: none;
@@ -655,73 +566,57 @@ section {
   border: solid 1px #806331;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .intro .content .location-time .venue-details .map-link a.map-button:hover {
   transform: translateY(-2px);
   /* Moves the button up slightly */
   box-shadow: 0 3px 5px rgba(154, 128, 94, 0.4);
   /* Adds a soft colorful glow */
 }
-
 @media (max-width: 500px) {
   .intro .content .invitation .logo img {
     max-width: 32.8vw;
   }
-
   .intro .content .invitation .family-info img {
     width: 3.2vw;
   }
-
   .intro .content .invitation .couple-names h2 {
     font-size: 9vw;
     letter-spacing: 0.24vw;
   }
-
   .intro .content .invitation .couple-names .separator-text {
     font-size: 6.4vw;
   }
-
   .intro .content .invitation .divider .divider-icon {
     width: 12vw;
   }
-
   .intro .content .location-time .top-detail h2 {
     font-size: 6.4vw;
   }
-
   .intro .content .location-time .top-detail .lunar-date {
     font-size: 2.8vw;
   }
-
   .intro .content .location-time .top-detail .location-name {
     font-size: 8vw;
   }
-
   .intro .content .location-time .top-detail .location-address {
     font-size: 2.8vw;
   }
-
   .intro .content .location-time .photo-area {
     max-width: 45.6vw;
   }
-
   .intro .content .location-time .time h2 {
     font-size: 5.6vw;
   }
-
   .intro .content .location-time .time h2 span {
     font-size: 5.2vw;
   }
-
   .intro .content .location-time .venue-details .divider .divider-icon {
     width: 14vw;
   }
-
   .intro .content .location-time .venue-details .location-name {
     font-size: 10.4vw;
     letter-spacing: 0.24vw;
   }
-
   .intro .content .location-time .venue-details .address-info {
     font-size: 2.8vw;
   }
@@ -735,7 +630,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 .gallery .gallery-grid {
   width: 100%;
   display: flex;
@@ -743,7 +637,6 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
 .gallery .row1 {
   display: flex;
   justify-content: center;
@@ -751,13 +644,11 @@ section {
   gap: 1%;
   margin-bottom: 1%;
 }
-
 .gallery .row1 .column1 {
   flex: 5.5;
   display: flex;
   justify-content: end;
 }
-
 .gallery .row1 .column1 .photo-box {
   max-width: 215px;
   width: 100%;
@@ -765,14 +656,12 @@ section {
   background-color: #806331;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/gallery/1.jpg") no-repeat center/cover;
 }
-
 .gallery .row1 .column2 {
   flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-
 .gallery .row1 .column2 .column2_row1 {
   max-width: 106px;
   display: flex;
@@ -781,17 +670,14 @@ section {
   height: 100%;
   perspective: 1000px;
 }
-
 .gallery .row1 .column2 .column2_row1 .icon {
   max-width: 87px;
   width: 100%;
   height: auto;
 }
-
 .gallery .row1 .column2 .column2_row2 {
   width: 100%;
 }
-
 .gallery .row1 .column2 .column2_row2 .photo-box {
   max-width: 106px;
   width: 100%;
@@ -799,14 +685,12 @@ section {
   background-color: #806331;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/gallery/3.jpg") no-repeat center/100%;
 }
-
 .gallery .row2 {
   display: flex;
   justify-content: center;
   width: 100%;
   gap: 1%;
 }
-
 .gallery .row2 .column1 {
   flex: 3.8;
   display: flex;
@@ -814,13 +698,11 @@ section {
   justify-content: start;
   align-items: end;
 }
-
 .gallery .row2 .column1 .column1_row1 {
   width: 100%;
   display: flex;
   justify-content: end;
 }
-
 .gallery .row2 .column1 .column1_row1 .photo-box {
   max-width: 162px;
   width: 100%;
@@ -828,7 +710,6 @@ section {
   background-color: #806331;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/gallery/2.jpg") no-repeat center/105%;
 }
-
 .gallery .row2 .column1 .column1_row2 {
   display: flex;
   justify-content: center;
@@ -838,22 +719,18 @@ section {
   height: 100%;
   perspective: 1000px;
 }
-
 .gallery .row2 .column1 .column1_row2 .icon {
   max-width: 104px;
   width: 100%;
   height: auto;
 }
-
 .gallery .row2 .column2 {
   flex: 5;
 }
-
 .gallery .row2 .column2 .column2_row1 {
   width: 100%;
   margin-bottom: 1.68%;
 }
-
 .gallery .row2 .column2 .column2_row1 .photo-box {
   max-width: 234px;
   width: 100%;
@@ -861,11 +738,9 @@ section {
   background-color: #806331;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/gallery/4.jpg") no-repeat 50% 50%/100%;
 }
-
 .gallery .row2 .column2 .column2_row2 {
   width: 100%;
 }
-
 .gallery .row2 .column2 .column2_row2 .photo-box {
   max-width: 182px;
   width: 100%;
@@ -873,40 +748,31 @@ section {
   background-color: #806331;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/VietAnh-PhuongThao/gallery/5.png") no-repeat 50% 100%/100%;
 }
-
 @media (max-width: 500px) {
   .gallery .row1 .column1 .photo-box {
     max-width: 43vw;
   }
-
   .gallery .row1 .column2 .column2_row1 {
     max-width: 21.2vw;
   }
-
   .gallery .row1 .column2 .column2_row1 .icon {
     max-width: 17.4vw;
   }
-
   .gallery .row1 .column2 .column2_row2 .photo-box {
     max-width: 21.2vw;
   }
-
   .gallery .row2 .column1 .column1_row1 .photo-box {
     max-width: 32.4vw;
   }
-
   .gallery .row2 .column1 .column1_row2 {
     max-width: 32.4vw;
   }
-
   .gallery .row2 .column1 .column1_row2 .icon {
     max-width: 20.8vw;
   }
-
   .gallery .row2 .column2 .column2_row1 .photo-box {
     max-width: 46.8vw;
   }
-
   .gallery .row2 .column2 .column2_row2 .photo-box {
     max-width: 36.4vw;
   }
@@ -915,7 +781,6 @@ section {
 .dresscode {
   width: 100%;
 }
-
 .dresscode .content {
   display: flex;
   justify-content: center;
@@ -925,7 +790,6 @@ section {
   perspective: 1000px;
   padding: 5% 0 10%;
 }
-
 .dresscode .content h2 {
   font-size: 44px;
   font-family: "UVNBUCTHU", sans-serif;
@@ -933,16 +797,13 @@ section {
   margin-bottom: 5%;
   letter-spacing: 2px;
 }
-
 .dresscode .content .subtext {
   letter-spacing: 1.2px;
   line-height: 1.8;
 }
-
 .dresscode .content .subtext .bold {
   font-weight: 600;
 }
-
 .dresscode .content .colors-grid {
   display: flex;
   justify-content: center;
@@ -950,7 +811,6 @@ section {
   width: 47%;
   margin-top: 2%;
 }
-
 .dresscode .content .colors-grid .item {
   flex: 1;
   display: flex;
@@ -958,14 +818,12 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 .dresscode .content .colors-grid .item .color {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .dresscode .content .colors-grid .item .color .circle {
   max-width: 38px;
   width: 100%;
@@ -973,23 +831,19 @@ section {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.105);
 }
-
 .dresscode .content .colors-grid .item .label {
   font-size: 12px;
   margin-top: 10%;
   text-transform: uppercase;
 }
-
 @media (max-width: 500px) {
   .dresscode .content h2 {
     font-size: 8.8vw;
     letter-spacing: 0.4vw;
   }
-
   .dresscode .content .colors-grid .item .color .circle {
     max-width: 7.6vw;
   }
-
   .dresscode .content .colors-grid .item .label {
     font-size: 2.4vw;
   }
@@ -998,7 +852,6 @@ section {
 .timeline {
   width: 100%;
 }
-
 .timeline .content {
   width: 100%;
   background: url("../../assets/images/bg/timeline_bg.webp") no-repeat center/80%;
@@ -1009,54 +862,43 @@ section {
   text-align: center;
   width: 100%;
 }
-
 .timeline .content .title {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 44px;
   padding-bottom: 5%;
   font-weight: 300;
 }
-
 .timeline .content .timeline-list .event {
   padding-bottom: 8%;
 }
-
 .timeline .content .timeline-list .event .icon {
   padding-bottom: 1.5%;
 }
-
 .timeline .content .timeline-list .event .icon img {
   width: 30px;
   height: auto;
 }
-
 .timeline .content .timeline-list .event p.time {
   margin-bottom: 0.8%;
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .timeline .content .timeline-list .event:nth-child(2) .icon img {
   width: 35px;
 }
-
 .timeline .content .dresscode-box {
   margin-top: 5%;
 }
-
 .timeline .content .dresscode-box .title {
   padding-bottom: 2%;
 }
-
 @media (max-width: 500px) {
   .timeline .content .title {
     font-size: 8.8vw;
   }
-
   .timeline .content .timeline-list .event .icon img {
     width: 6vw;
   }
-
   .timeline .content .timeline-list .event:nth-child(2) .icon img {
     width: 7vw;
   }
@@ -1065,7 +907,6 @@ section {
 .couple-photo {
   width: 100%;
 }
-
 .couple-photo .content {
   width: 100%;
   display: flex;
@@ -1074,7 +915,6 @@ section {
   padding: 7% 0;
   perspective: 1000px;
 }
-
 .couple-photo .content .container-photo {
   width: 100%;
   max-width: 297px;
@@ -1084,29 +924,24 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 .couple-photo .content .container-photo img {
   width: 100%;
   height: auto;
 }
-
 .couple-photo .content .container-photo .overlay {
   position: absolute;
   bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .couple-photo .content .container-photo .overlay img {
   width: 116px;
   height: auto;
 }
-
 @media (max-width: 500px) {
   .couple-photo .content .container-photo {
     max-width: 59.4vw;
   }
-
   .couple-photo .content .container-photo .overlay img {
     width: 23.2vw;
   }
@@ -1117,7 +952,6 @@ section {
   margin-bottom: 6%;
   position: relative;
 }
-
 .our-story .animal-img {
   position: absolute;
   bottom: -5%;
@@ -1126,23 +960,19 @@ section {
   width: 100%;
   height: auto;
 }
-
 .our-story .divider {
   text-align: center;
   width: 100%;
   padding-bottom: 6%;
 }
-
 .our-story .divider .divider-icon {
   max-width: 151px;
   width: 100%;
   height: auto;
 }
-
 .our-story .items .item {
   display: flex;
 }
-
 .our-story .items .item p.time,
 .our-story .items .item h3.title {
   font-size: 14px;
@@ -1151,11 +981,9 @@ section {
   top: -1%;
   font-weight: 300;
 }
-
 .our-story .items .item h3.title {
   padding-bottom: 2%;
 }
-
 .our-story .items .item img.overlay {
   position: absolute;
   max-width: 142px;
@@ -1164,26 +992,22 @@ section {
   top: 0;
   left: 0;
 }
-
 .our-story .items .item .column {
   position: relative;
   flex: 1;
   padding: 0 7% 8% 5%;
   text-align: left;
 }
-
 .our-story .items .item .column .description {
   display: block;
   width: 100%;
   aspect-ratio: 10/5;
   font-size: 13px;
 }
-
 .our-story .items .item .column:first-child {
   text-align: right;
   border-right: solid 2px #806331;
 }
-
 .our-story .items .item .column:first-child:after {
   content: "";
   display: inline-block;
@@ -1197,65 +1021,51 @@ section {
   top: 0;
   transform: translateX(55%);
 }
-
 .our-story .items .item:nth-child(even) {
   flex-direction: row-reverse;
 }
-
 .our-story .items .item:nth-child(even) img.overlay {
   top: 0;
   left: unset;
   right: 0;
 }
-
 .our-story .items .item:nth-child(even) .column:first-child:after {
   transform: translateX(-57%);
   left: 0;
 }
-
 .our-story .items .item:nth-child(even) .column:first-child {
   border-right: unset;
 }
-
 .our-story .items .item:nth-child(even) .column:first-child .time {
   text-align: left;
 }
-
 .our-story .items .item:nth-child(even) .column:last-child {
   text-align: right;
   border-right: solid 2px #806331;
 }
-
 @media (max-width: 500px) {
   .our-story .divider .divider-icon {
     max-width: 30.2vw;
   }
-
   .our-story .animal-img {
     max-width: 40vw;
   }
-
   .our-story .items .item p.time,
   .our-story .items .item h3.title {
     font-size: 2.8vw;
   }
-
   .our-story .items .item img.overlay {
     max-width: 28.4vw;
   }
-
   .our-story .items .item .column .description {
     font-size: 2.6vw;
   }
-
   .our-story .items .item .column:first-child {
     border-right: solid 0.4vw #806331;
   }
-
   .our-story .items .item .column:first-child:after {
     max-width: 3vw;
   }
-
   .our-story .items .item:nth-child(even) .column:last-child {
     text-align: right;
     border-right: solid 0.4vw #806331;
@@ -1271,7 +1081,6 @@ section {
   width: 100%;
   overflow: hidden;
 }
-
 .album-style .img-box-top {
   max-width: 100%;
   width: 100%;
@@ -1282,14 +1091,12 @@ section {
   background-size: 100%;
   background-position: center;
 }
-
 .album .highlight {
   width: 100%;
   aspect-ratio: 500/460;
   perspective: 1000px;
   position: relative;
 }
-
 .album .highlight img.text-the {
   width: 91px;
   height: auto;
@@ -1297,29 +1104,24 @@ section {
   top: 12%;
   left: 7%;
 }
-
 .album .highlight h2 {
   font-size: 28px;
   text-transform: uppercase;
   font-weight: 300;
 }
-
 .album .highlight h2.album-text {
   position: absolute;
   top: 24%;
   left: 10%;
 }
-
 .album .highlight h2.oflove-text {
   position: absolute;
   top: 68%;
   right: 18%;
 }
-
 .album .highlight .photo-frame .img-box {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.513);
 }
-
 .album .highlight .photo-frame.right {
   max-width: 290px;
   width: 100%;
@@ -1328,7 +1130,6 @@ section {
   left: 43%;
   top: -5%;
 }
-
 .album .highlight .photo-frame.right .img-box {
   max-width: 307px;
   background-color: #f2ebd8;
@@ -1337,20 +1138,17 @@ section {
   padding: 4%;
   transform: rotate(13deg);
 }
-
 .album .highlight .photo-frame.right .img-box .box {
   width: 100%;
   height: 80%;
   background-color: #806331;
 }
-
 .album .highlight .photo-frame.right .img-box .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 43%;
 }
-
 .album .highlight .photo-frame.left {
   position: absolute;
   top: 40%;
@@ -1359,7 +1157,6 @@ section {
   width: 100%;
   aspect-ratio: 1;
 }
-
 .album .highlight .photo-frame.left .img-box {
   background-color: #f2ebd8;
   width: 100%;
@@ -1367,48 +1164,40 @@ section {
   transform: rotate(-4deg);
   padding: 4%;
 }
-
 .album .highlight .photo-frame.left .img-box .box {
   width: 100%;
   height: 80%;
   background-color: #806331;
 }
-
 .album .highlight .photo-frame.left .img-box .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 16%;
 }
-
 .album .slider .swiper {
   width: 95%;
   margin: 2% auto;
 }
-
 .album .slider .main-swiper {
   aspect-ratio: 1/1.5;
   border-radius: 10px;
   overflow: hidden;
   background-color: #806331;
 }
-
 .album .slider .main-swiper .swiper-button-next,
 .album .slider .main-swiper .swiper-button-prev {
   color: #806331;
 }
-
 .album .slider .main-swiper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .album .slider .thumb-swiper {
   box-sizing: border-box;
   padding: 0;
 }
-
 .album .slider .thumb-swiper .swiper-slide {
   aspect-ratio: 1;
   opacity: 0.7;
@@ -1417,44 +1206,36 @@ section {
   background-color: #806331;
   border-radius: 10px;
 }
-
 .album .slider .thumb-swiper .swiper-slide-thumb-active {
   opacity: 1;
   border-radius: 10px;
   border: 1px solid #806331;
 }
-
 .album .slider .thumb-swiper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-
 .album .slider .main-swiper .swiper-button-next,
 .album .slider .main-swiper .swiper-button-prev {
   color: #fffffe;
 }
-
 .album .slider .main-swiper .swiper-button-next:after,
 .album .slider .main-swiper .swiper-button-prev:after {
   font-size: 60px;
   font-weight: 900;
 }
-
 @media (max-width: 500px) {
   .album .highlight img.text-the {
     width: 18.2vw;
   }
-
   .album .highlight h2 {
     font-size: 5.6vw;
   }
-
   .album .highlight .photo-frame.right {
     max-width: 58vw;
   }
-
   .album .highlight .photo-frame.left {
     max-width: 45.6vw;
   }
@@ -1471,41 +1252,34 @@ section {
   margin-top: 10%;
   font-weight: bold;
 }
-
 .rsvp h2.title {
   font-family: "UVNBUCTHU", sans-serif;
   font-size: 42px;
   padding-bottom: 5%;
   font-weight: 300;
 }
-
 .rsvp .divider {
   margin-bottom: 3%;
 }
-
 .rsvp p.info-text {
   padding: 2% 0 4%;
   font-size: 14px;
   font-weight: 500;
 }
-
 .rsvp .button-group {
   display: flex;
   gap: 5%;
   margin-bottom: 10%;
 }
-
 .rsvp .label-confirm {
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 3%;
 }
-
 .rsvp .radio-input {
   display: none;
   margin-bottom: 2%;
 }
-
 .rsvp .btn {
   flex: 1;
   padding: 2% 0 2%;
@@ -1526,43 +1300,35 @@ section {
   background-color: #fff;
   margin-top: 2%;
 }
-
 .rsvp .btn-yes {
   background: transparent;
   color: #806331;
 }
-
 .rsvp .btn-yes:hover {
   background: #806331;
   color: #faf8f3;
   transform: translateY(-2px);
 }
-
-.rsvp .radio-input:checked+.btn-yes {
+.rsvp .radio-input:checked + .btn-yes {
   background: #806331;
   color: #faf8f3;
 }
-
 .rsvp .btn-no {
   color: #806331;
   background: transparent;
 }
-
 .rsvp .btn-no:hover {
   background: #806331;
   color: #faf8f3;
   transform: translateY(-2px);
 }
-
-.rsvp .radio-input:checked+.btn {
+.rsvp .radio-input:checked + .btn {
   background: #806331;
   color: #faf8f3;
 }
-
 .rsvp .form-group {
   margin-bottom: 3%;
 }
-
 .rsvp input,
 .rsvp textarea {
   width: 100%;
@@ -1578,24 +1344,20 @@ section {
   font-family: "iCielBCOldStyle", sans-serif;
   font-weight: 300;
 }
-
 .rsvp input:focus,
 .rsvp textarea:focus {
   outline: none;
   border-color: #806331;
   box-shadow: 0 0 10px rgba(107, 93, 79, 0.1);
 }
-
 .rsvp input::placeholder,
 .rsvp textarea::placeholder {
   color: #a89b88;
 }
-
 .rsvp textarea::placeholder {
   margin: auto;
   font-size: 11px;
 }
-
 .rsvp textarea {
   resize: vertical;
   border-radius: 20px;
@@ -1603,7 +1365,6 @@ section {
   aspect-ratio: 3/1;
   padding-top: 4%;
 }
-
 .rsvp .form-select {
   font-family: "iCielBCOldStyle", sans-serif;
   width: 100%;
@@ -1627,7 +1388,6 @@ section {
   cursor: pointer;
   background-color: transparent;
 }
-
 .rsvp .submit-btn {
   width: 40%;
   padding: 2% 0;
@@ -1645,57 +1405,45 @@ section {
   transition: all 0.3s ease;
   margin-top: 10px;
 }
-
 .rsvp .guest-gender {
   margin-bottom: 6%;
 }
-
 .rsvp .submit-btn:hover {
   background: #574d42;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(107, 93, 79, 0.3);
 }
-
 .rsvp .submit-btn:active {
   transform: translateY(0);
 }
-
 @media (max-width: 500px) {
   .rsvp h2.title {
     font-size: 8.4vw;
   }
-
   .rsvp p.info-text,
   .rsvp p.note-text {
     font-size: 2.8vw;
   }
-
   .rsvp .label-confirm {
     font-size: 2.4vw;
   }
-
   .rsvp .btn {
     font-size: 2.2vw;
     letter-spacing: 0.2vw;
   }
-
   .rsvp input {
     font-size: 2.6vw;
   }
-
   .rsvp textarea {
     font-size: 2.4vw;
   }
-
   .rsvp textarea::placeholder {
     font-size: 2.2vw;
   }
-
   .rsvp .form-select {
     font-size: 2.6vw;
     background-size: 1.8vw;
   }
-
   .rsvp .submit-btn {
     font-size: 2.2vw;
     letter-spacing: 0.4vw;
@@ -1705,7 +1453,6 @@ section {
 .footer {
   width: 100%;
 }
-
 .footer .content {
   width: 100%;
   display: flex;
@@ -1719,7 +1466,6 @@ section {
   color: white;
   z-index: 1;
 }
-
 .footer .content::before {
   content: "";
   position: absolute;
@@ -1730,18 +1476,15 @@ section {
   z-index: 0;
   transform: scale(1.1);
 }
-
 .footer .content .logo {
   width: 100%;
   margin-bottom: 10%;
 }
-
 .footer .content .logo img {
   width: 142px;
   height: auto;
   object-fit: cover;
 }
-
 .footer .content .qr {
   color: white;
   display: flex;
@@ -1749,11 +1492,9 @@ section {
   align-items: center;
   flex-direction: column;
 }
-
 .footer .content .qr p {
   text-transform: uppercase;
 }
-
 .footer .content .qr .qr-box {
   padding: 5%;
   display: flex;
@@ -1761,14 +1502,12 @@ section {
   gap: 10%;
   width: 100%;
 }
-
 .footer .content .qr .qr-box .column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 .footer .content .qr .qr-box .column img {
   display: block;
   max-width: 148px;
@@ -1778,54 +1517,44 @@ section {
   margin: 5% 0 2%;
   border-radius: 5px;
 }
-
 .footer .content .qr .qr-box .column .qr-info {
   font-size: 14px;
   margin-bottom: 5%;
 }
-
 .footer .content p.thanks {
   padding: 0 13%;
   text-align: justify;
   text-align-last: center;
   font-size: 13px;
 }
-
 .footer .content p.credits {
   font-family: "UVNKeChuyen3", sans-serif;
   font-weight: 300;
   font-size: 20px;
   padding: 3% 0 10%;
 }
-
 .footer .content p.text-end {
   text-transform: uppercase;
   font-size: 10px;
   margin-bottom: 3%;
 }
-
 @media (max-width: 500px) {
   .footer .content .logo img {
     width: 28.4vw;
   }
-
   .footer .content .qr .qr-box .column img {
     max-width: 29.6vw;
     border-radius: 1vw;
   }
-
   .footer .content .qr .qr-box .column .qr-info {
     font-size: 2.8vw;
   }
-
-  .footer .content p.credits {
+  .footer .content p.thanks {
     font-size: 2.6vw;
   }
-
   .footer .content p.credits {
     font-size: 4vw;
   }
-
   .footer .content p.text-end {
     font-size: 2vw;
   }
