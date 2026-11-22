@@ -611,10 +611,10 @@
 
     if (confirm === "Sẽ tham dự" && !formData.getAll("party").length) {
       Swal.fire({
-        title: lang === "en" ? "Choose a party" : "Vui lòng chọn tiệc",
+        title: lang === "en" ? "Choose a party" : "Vui lòng chọn",
         text: lang === "en"
           ? "Select at least one party: groom's family or bride's family."
-          : "Vui lòng chọn ít nhất Tiệc nhà trai hoặc Tiệc nhà gái.",
+          : "Bạn vui lòng chọn ít nhất Lễ Vu Quy hoặc Lễ Thành Hôn.",
         icon: "warning",
         confirmButtonText: "OK",
         confirmButtonColor: "#806331ff",
