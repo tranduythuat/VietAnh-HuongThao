@@ -90,10 +90,12 @@
         color: $primary-color;
     }
 
-    .btn-yes:hover {
-        background: $primary-color;
-        color: #faf8f3;
-        transform: translateY(-2px);
+    @media (hover: hover) and (pointer: fine) {
+        .btn-yes:hover {
+            background: $primary-color;
+            color: #faf8f3;
+            transform: translateY(-2px);
+        }
     }
 
     .radio-input:checked+.btn-yes {
@@ -106,10 +108,12 @@
         background: transparent;
     }
 
-    .btn-no:hover {
-        background: $primary-color;
-        color: #faf8f3;
-        transform: translateY(-2px);
+    @media (hover: hover) and (pointer: fine) {
+        .btn-no:hover {
+            background: $primary-color;
+            color: #faf8f3;
+            transform: translateY(-2px);
+        }
     }
 
     .radio-input:checked+.btn {

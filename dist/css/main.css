@@ -528,7 +528,7 @@ section {
   font-size: 26px;
 }
 .intro .content .location-time .time .lunar-date {
-  text-transform: uppercase;
+  font-size: 14px;
 }
 .intro .content .location-time .venue-details .divider {
   width: 100%;
@@ -609,6 +609,9 @@ section {
   }
   .intro .content .location-time .time h2 span {
     font-size: 5.2vw;
+  }
+  .intro .content .location-time .time .lunar-date {
+    font-size: 2.8vw;
   }
   .intro .content .location-time .venue-details .divider .divider-icon {
     width: 14vw;
@@ -1310,10 +1313,12 @@ section {
   background: transparent;
   color: #806331;
 }
-.rsvp .btn-yes:hover {
-  background: #806331;
-  color: #faf8f3;
-  transform: translateY(-2px);
+@media (hover: hover) and (pointer: fine) {
+  .rsvp .btn-yes:hover {
+    background: #806331;
+    color: #faf8f3;
+    transform: translateY(-2px);
+  }
 }
 .rsvp .radio-input:checked + .btn-yes {
   background: #806331;
@@ -1323,10 +1328,12 @@ section {
   color: #806331;
   background: transparent;
 }
-.rsvp .btn-no:hover {
-  background: #806331;
-  color: #faf8f3;
-  transform: translateY(-2px);
+@media (hover: hover) and (pointer: fine) {
+  .rsvp .btn-no:hover {
+    background: #806331;
+    color: #faf8f3;
+    transform: translateY(-2px);
+  }
 }
 .rsvp .radio-input:checked + .btn {
   background: #806331;
